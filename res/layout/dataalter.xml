@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_dataupdateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入登陆用户名（身份证）："
+        android:textSize="15dp"/>
+    
+    <EditText 
+        android:id="@+id/et_dataupdateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv_dataupdatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入新的登陆密码："
+        android:textSize="15dp"/>
+    
+    <EditText 
+        android:id="@+id/et_dataupdatePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv_dataupdateIdentifCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入新的用户身份证："
+        android:textSize="15dp"/>
+    
+    <EditText 
+        android:id="@+id/et_dataupdateIdentifCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv_dataupdatePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入新的用户联系电话："
+        android:textSize="15dp"/>
+    
+    <EditText 
+        android:id="@+id/et_dataupdatePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv_dataupdateAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入新的家庭地址："
+        android:textSize="15dp"/>
+    
+    <EditText 
+        android:id="@+id/et_dataupdateAdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv_dataupdateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入新的邮箱："
+        android:textSize="15dp"/>
+    
+    <EditText 
+        android:id="@+id/et_dataupdateEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv_dataupdatestate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*注：若不输入则代表不修改该项信息"
+        android:textColor="@android:color/holo_red_dark"
+        />
+    
+    <Button 
+        android:id="@+id/btn_dataupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick_DataUpdate"/>
+</LinearLayout>

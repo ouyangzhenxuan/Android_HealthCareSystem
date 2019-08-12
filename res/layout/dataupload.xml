@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/tv_datauploadcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击传感器进行数据上传"
+        android:textSize="15dp"/>
+    
+    <ListView
+        android:id="@+id/lv_dataupload"
+        android:layout_width="match_parent"
+        android:layout_height="600px">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickUpload"
+        android:text="上传数据" />
+
+    <TextView
+        android:id="@+id/tv_ducontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="helloworld" />
+
+</LinearLayout>

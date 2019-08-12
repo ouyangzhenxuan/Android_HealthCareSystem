@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tv_deviceconnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前连接的设备：点击下列设备进行注册" 
+        android:textSize="40px"/>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_refresh"
+        android:layout_alignBottom="@+id/btn_refresh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:onClick="onClick_DeviceRegister"
+        android:text="在上表点击需要注册的传感器" />
+
+    <ListView
+        android:id="@+id/lv_deviceregister"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_deviceconnected" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_deviceregister"
+        android:layout_toLeftOf="@+id/btn_search"
+        android:onClick="onClick_DeviceRegisterRefresh"
+        android:text="刷新" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_search"
+        android:layout_marginTop="19dp"
+        android:text="helloworld" />
+
+</RelativeLayout>
